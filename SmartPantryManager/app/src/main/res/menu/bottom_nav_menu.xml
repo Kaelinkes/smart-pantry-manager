@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_pantry" android:title="Pantry" android:icon="@android:drawable/ic_menu_sort_by_size" />
-    <item android:id="@+id/nav_suggestions" android:title="Suggestions" android:icon="@android:drawable/ic_menu_search" />
-    <item android:id="@+id/nav_settings" android:title="Settings" android:icon="@android:drawable/ic_menu_preferences" />
-</menu>
+<?xml version="1.0" encoding="utf-8"?><menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/nav_pantry" android:icon="@android:drawable/ic_menu_agenda" android:title="@string/nav_pantry"/><item android:id="@+id/nav_suggestions" android:icon="@android:drawable/ic_menu_search" android:title="@string/nav_suggestions"/><item android:id="@+id/nav_settings" android:icon="@android:drawable/ic_menu_preferences" android:title="@string/nav_settings"/></menu>
