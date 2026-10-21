@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.SmartPantry" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/pantry_green</item>
+        <item name="colorPrimaryDark">@color/pantry_green_dark</item>
+        <item name="colorAccent">@color/pantry_accent</item>
+    </style>
+</resources>
