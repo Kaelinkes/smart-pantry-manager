@@ -1,14 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background" android:orientation="vertical">
-    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/pantry_green" app:titleTextColor="@color/white" />
-    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"><LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
-        <EditText android:id="@+id/input_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_ingredient_name" android:inputType="textCapWords" />
-        <EditText android:id="@+id/input_quantity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/hint_quantity" android:inputType="numberDecimal" />
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/label_unit" android:textColor="@color/text_secondary" />
-        <Spinner android:id="@+id/spinner_unit" android:layout_width="match_parent" android:layout_height="wrap_content" />
-        <EditText android:id="@+id/input_expiry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:focusable="false" android:hint="@string/hint_expiry_date" />
-        <Button android:id="@+id/btn_pick_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_pick_date" />
-        <Button android:id="@+id/btn_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:backgroundTint="@color/pantry_green" android:text="@string/btn_save" android:textColor="@color/white" />
-        <Button android:id="@+id/btn_delete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/btn_delete" android:visibility="gone" />
-    </LinearLayout></ScrollView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_blue"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_ingredient_name"
+                android:inputType="textCapWords"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/input_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/hint_quantity"
+                android:inputType="numberDecimal"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/label_unit"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <EditText
+                android:id="@+id/input_expiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:focusable="false"
+                android:hint="@string/hint_expiry_date"
+                android:inputType="none"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/btn_pick_date"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_pick_date"
+                android:textColor="@color/primary_blue" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/primary_blue"
+                android:text="@string/btn_save"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_delete"
+                android:textColor="@color/alert_red"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
